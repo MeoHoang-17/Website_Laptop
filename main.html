@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Laptop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="contact-info">admin@duyhungcompany.vn | Hotline: 086.767.46.98</div>
+            <div class="logo-search">
+                <div class="logo">
+                    <img src="Logo DH.png" alt="Logo" style="width: 200px; height: 80px;">
+                </div>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Nhập sản phẩm cần tìm...">
+                    <button type="button">Search</button>
+                </div>
+                
+                <div class="button">
+                    <button id="cart"><i class="fa-solid fa-cart-shopping"></i> Giỏ Hàng</button>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                        <div class="cart-items">
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-layer-group"></i><b> DANH MỤC SẢN PHẨM</b></a></li>
+                    <li><a href="#"><b>DỰ ÁN DOANH NGHIỆP</b></a></li>
+                    <li><a href="#"><b>TIN TỨC</b></a></li>
+                    <li><a href="#"><b>XÂY DỰNG CẤU HÌNH</b></a></li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <div class="slider">
+        <div class="container">
+            <div class="nametask">
+                <h2>
+                    GỢI Ý CHO BẠN
+                </h2>
+            </div>
+            <div id="slide">
+                <div class="item" style="background-image: url(1.png)">
+                    <div class="content">
+                        <div class="name">Laptop Acer Predator<br>Helios Neo</div>
+                        <div class="price">49.990.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(2.png)">
+                    <div class="content">
+                        <div class="name">Laptop Acer Nitro V<br>Core™ i7-13620H</div>
+                        <div class="price">25.990.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(3.png)">
+                    <div class="content">
+                        <div class="name">Laptop Gaming Acer<br>Aspire 5</div>
+                        <div class="price">21.490.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(4.png)">
+                    <div class="content">
+                        <div class="name">Laptop MSI Raider<br>Intel Core i7-13700HX</div>
+                        <div class="price">60.500.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(5.png)">
+                    <div class="content">
+                        <div class="name">Laptop Lenovo Legion<br>Gaming 5</div>
+                        <div class="price">30.890.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(11.png)">
+                    <div class="content">
+                        <div class="name">Laptop Lenovo Legion 5<br>Ryzen 7</div>
+                        <div class="price">34.390.000 VNĐ</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(12.png)">
+                    <div class="content">
+                        <div class="name">Laptop MSI Stealth<br>Core™ i9-12900H</div>
+                        <div class="price">69.890.000 VNĐ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+<div class="nametask2">
+    <div class="a-left"><b>Sắp xếp theo</b></div>
+    <div class="a-right">Bán chạy | Giá từ thấp đến cao | Giá từ cao đến thấp</div>
+</div>
+<section class="wrapper">
+    <div class="products">
+        <ul>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="1.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">
+                        Laptop Acer Predator Helios Neo Core i7-13700HX | 16GB |<br> 512GB | RTX
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">49.990.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="2.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">Laptop Acer Nitro V<br>
+                        Core™ i7-13620H | 16GB | 512GB | RTX 2050 4GB | 15.6 inch FHD
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">25.990.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="2.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">
+                        Laptop Acer Nitro V<br>
+                        Core i5-13420H | 8GB | 512GB | RTX 2050 4GB | 15.6 inch FHD
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">21.490.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="3.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">
+                        Laptop Gaming Acer Aspire 5<br>
+                        Core™ i5-13420H | 8GB | <br>512GB SSD
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">20.490.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="4.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">
+                        Laptop MSI Raider<br>
+                        Intel Core i7-13700HX | 32GB | 2TB  RTX 4070 | 16 inch QHD+ | Win 11
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">60.500.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="5.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">
+                        Laptop Lenovo Legion Gaming 5<br>
+                        Ryzen 5 6600H/ 16GB/ 512GB SSD/ Nvidia GeForce RTX 3060
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">30.890.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="6.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">
+                        Laptop Lenovo IdeaPad Gaming 3<br>
+                        Ryzen 5-5600H | 8GB | 512GB | RTX 3050 4G
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">15.890.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="6.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">
+                        Laptop Lenovo IdeaPad Gaming 3<br>
+                        Ryzen 7-5800H | 8GB | 512GB | RTX 3050 4GB
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">18.390.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="7.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">Laptop Lenovo IdeaPad Gaming 3<br>
+                        Ryzen 5 6600H | 8GB | 512GB SSD | RTX 3050
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">17.890.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="8.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">Laptop Lenovo IdeaPad Gaming 3<br>
+                        Core i5 12500H | 16GB | 512GB SSD | RTX 3050Ti | 15.6 inch FHD
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">20.890.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="9.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">Laptop Lenovo IdeaPad Gaming 3<br>
+                        Ryzen 7 6800H, 8GB, RTX 3050, 15.6 inch FHD
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">19.890.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="10.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">Laptop Lenovo Legion Gaming 5<br>
+                        Ryzen 7 4800H/ 16GB/ 512GB SSD/ Nvidia GeForce GTX
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">19.890.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="11.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">Laptop Lenovo LOQ<br>
+                        Intel Core i5-13420H | 8GB | 512GB | RTX 4050 6GB | 15.6 inch FHD
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">28.890.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="7.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">Laptop Lenovo Legion 5<br>
+                        Ryzen 7 6800H | 16GB | 512GB | RTX 3060 6GB | 15.6 inch WQHD
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">34.390.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+            <li class="main-product">
+                <div class="img-product">
+                    <img class="img-prd" src="12.png" alt="">
+                </div>
+                <div class="content-product">
+                    <h3 class="content-product-h3">Laptop MSI Stealth<br>
+                        Core™ i9-12900H | 32GB | 2TB SSD | RTX3080 Max-Q 8GB
+                    </h3>
+                    <div class="content-product-deltals">
+                        <div class="price">
+                            <span class="money">69.890.000 VNĐ</span>
+                        </div>
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+    <div class="taskbar">
+        <div class="taskbar-section section5">
+            <img src="Pay.png" alt="Logo">
+            <div class="taskbar-text">
+                <b>THANH TOÁN TIỆN LỢI</b><br>
+                <a style="font-size: smaller;">Thanh toán bằng tiền mặt, chuyển khoản, trả góp</a>
+            </div> 
+        </div>
+        <div class="taskbar-section section6">
+            <img src="Hotline.png" alt="Logo">
+            <div class="taskbar-text">
+                <b>HỖ TRỢ NHANH CHÓNG</b><br>
+                <a style="font-size: smaller;">Hotline tư vấn miễn phí: 0965.68.42.98</a>
+            </div> 
+        </div>
+        <div class="taskbar-section section7">
+            <img src="delivery.png" alt="Logo">
+            <div class="taskbar-text">
+                <b>GIAO HÀNG TOÀN QUỐC</b><br>
+                <a style="font-size: smaller;">Giao hàng trả trước tiền sau SHIP-COD</a>
+            </div> 
+        </div>
+        <div class="taskbar-section section8">
+            <img src="return.png" alt="Logo">
+            <div class="taskbar-text">
+                <b>ĐỔI TRẢ DỄ DÀNG</b><br>
+                <a style="font-size: smaller;">Đổi mới 30 ngày đầu nếu có lỗi của nhà sản xuất</a>
+            </div> 
+        </div>
+    </div>
+    <div class="minibar">
+        <div class="minibar-section">
+            <div class="minibar-text">
+                <p>
+                    <b>SHOWROOM BÁN HÀNG<br>
+                    64 HOÀNG NGÂN, TRUNG HÒA, CẦU GIẤY, HÀ NỘI</b>
+                </p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6261361319744!2d105.80695317530046!3d21.00761848063638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac9eee5d9887%3A0x79f19c643c96dec!2zNjQgUC4gSG_DoG5nIE5nw6JuLCBUcnVuZyBIb8OgLCBD4bqndSBHaeG6pXksIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1711033277748!5m2!1svi!2s" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+        </div>
+        <div class="minibar-section">
+            <div class="minibar-text">
+                <p><b>FANPAGE FACEBOOK</b></p>
+            </div><br>
+            <img src="Fp DH.png" alt=":Logo" style="width: 700px; height: 400px; margin-top: 10px;">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-section section1">
+            <h style="font-size: large;"><b>THÔNG TIN LIÊN HỆ</b></h><br>
+            <img src="Logo DHC.png" alt="Logo" style="width: 300px; height: 120px; margin-left: -8%;">
+            <p style="font-size: small;">CÔNG TY CP TƯ VẤN CÔNG NGHỆ THƯƠNG MẠI DUY HƯNG<br>
+            Địa chỉ: Số 64 phố Hoàng Ngân, PhườngTrung Hòa, Quận Cầu Giấy, TP. Hà Nội</p>
+            <img src="Logo BCT.png" alt="Logo" style="width: 200px; height: 75px; margin-left: -8%;">
+        </div>
+        <div class="footer-section section2">
+            <b style="font-size: large;">Thông tin</b><br><br>
+            Giới thiệu Duy Hưng Company<br>
+            Địa chỉ Showroom<br>
+            Thông tin liên hệ<br>
+            Tuyển dụng
+        </div>
+        <div class="footer-section section3" style="width: 23%;">
+            <b style="font-size: large;">Hỗ trợ khách hàng</b><br><br>
+            Hướng dẫn mua hàng online<br>
+            Hướng dẫn thanh toán<br>
+            Hướng dẫn mua trả góp<br>
+        </div>
+        <div class="footer-section section4">
+            <b style="font-size: large;">Chính sách mua hàng và bảo hành</b><br><br>
+            Chính sách bảo hành<br>
+            Chính sách bảo hành PC và Màn hình<br>
+            Chính sách vận chuyển<br>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
